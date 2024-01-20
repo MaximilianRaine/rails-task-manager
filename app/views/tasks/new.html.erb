@@ -1,0 +1,12 @@
+<div>
+  <h1>My new task:</h1>
+  <%= form_with model: @tasks do |f| %>
+    <%= f.label :title %>
+    <%= f.text_field :title, class:"" %>
+    <%= f.label :details %>
+    <%= f.text_field :details %>
+    <%= f.submit %>
+  <% end %>
+</div>
+
+<%= link_to "Back to TASKS", tasks_path %>
